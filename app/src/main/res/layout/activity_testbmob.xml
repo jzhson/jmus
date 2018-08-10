@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="比目云的初始化比较简单，导入官方给的文档中的依赖。在AndroidManifest文件中配置相应的权限即可。"/>
+
+
+    <Button
+        android:id="@+id/btn_testUserTableuse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="测试自带User表的使用"/>
+
+
+    <Button
+        android:id="@+id/btn_testCustomTableCRUD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="测试自定义表的增删改查"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:text="-------------------------------------------------------------------------------------------------------------------"/>
+
+
+</LinearLayout>

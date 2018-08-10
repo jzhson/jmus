@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <EditText
+                android:id="@+id/et_ur_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:hint="邮箱账号"
+                android:singleLine="true"
+                android:maxLength="30"
+                android:drawableLeft="@mipmap/ic_username_48" />
+            <ProgressBar
+                android:layout_width="30dp"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <EditText
+                android:id="@+id/et_ur_password"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="50dp"
+                android:hint="密码"
+                android:singleLine="true"
+                android:maxLength="19"
+                android:inputType="textPassword"
+                android:drawableLeft="@mipmap/ic_password_48" />
+
+            <ImageView
+                android:id="@+id/img_password_visibility"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_password_visible_48"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <EditText
+                android:id="@+id/et_ur_passwordSure"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="50dp"
+                android:hint="确认密码"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:maxLength="19"
+                android:drawableLeft="@mipmap/ic_password_48" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/ic_gender_48"
+                android:text="性别："
+                android:gravity="center"
+                android:textSize="18sp"/>
+            <Spinner
+                android:id="@+id/sp_ur_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/ic_gender_48"
+                android:text="出生日期："
+                android:gravity="center"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/tv_ur_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="选择出生日期"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_ur_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:text="提交注册信息"/>
+    </LinearLayout>
+
+
+</LinearLayout>

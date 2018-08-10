@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.tronxincloud.bmobtest.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_testBmob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:text="测试Bmob相关操作"/>
+
+
+            <Button
+                android:id="@+id/btn_testJPushService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="测试极光推送服务"/>
+
+
+            <Button
+                android:id="@+id/btn_testAmapService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="测试高德定位服务"/>
+
+
+            <Button
+                android:id="@+id/btn_testXFyun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="测试科大讯飞服务"/>
+            <Button
+                android:id="@+id/btn_testAzure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="测试微软Azure云"/>
+            <Button
+                android:id="@+id/btn_testTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="测试主题切换"/>
+
+            <Button
+                android:id="@+id/btn_testQiniu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="测试七牛存储"/>
+
+            <Button
+                android:id="@+id/btn_testDataEncryptionAndDecryption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="测试数据加解密"/>
+
+            <Button
+                android:id="@+id/btn_testApkVerify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="测试apk校验"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

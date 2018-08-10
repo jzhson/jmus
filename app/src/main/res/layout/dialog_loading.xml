@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/style_dialog_loading"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <com.hss01248.roundprogressbar.SmoothRoundProgressBar
+            android:id="@+id/pg_dialogLoading"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cpb_duration = "1200"
+            app:cpb_endColor="#FF0000"
+            app:cpb_startColor ="#FF8000"/>
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/tv_dialogMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textColor="#999999"
+            android:text="正在加载中..."/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

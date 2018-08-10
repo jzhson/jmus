@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyTest</string>
+    <string-array name="sp_stringarray_gender">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+</resources>

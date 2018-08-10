@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/back1"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"/>
+
+
+        <EditText
+            android:id="@+id/input_username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:textSize="18sp"
+            android:hint="用户名"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:drawableLeft="@mipmap/ic_username_48"
+            android:background="@drawable/style_edittext_input"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:drawableLeft="@mipmap/ic_password_48"
+                android:inputType="textPassword"
+                android:hint="密码"
+                android:maxLength="20"
+                android:background="@drawable/style_edittext_input"/>
+
+            <ImageView
+                android:id="@+id/img_password_visibility"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_password_visible_48"/>
+        </RelativeLayout>
+
+
+        <CheckBox
+            android:id="@+id/cbox_rememberUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住用户"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+        <CheckBox
+            android:id="@+id/cbox_autoLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动登录"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_forgetPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="忘记密码?"
+            android:textColor="#FFFFFF"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="登录"/>
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注册"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
